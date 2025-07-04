@@ -104,6 +104,22 @@
     .social-links a:hover {
       color: #facc15;
     }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 1rem;
+    }
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
   </style>
 </head>
 <body>
@@ -182,9 +198,16 @@
 
     <section id="gallery">
       <h2>Gallery</h2>
-      <p>(Add images or photo gallery of your academic events, conferences, seminars, etc.)</p>
+      <div class="gallery-grid">
+        <img src="gallery/CCSN 2023 MUMBAI.jpg" alt="Event 1" />
+		<img src="gallery/ALUMNI.jpg" alt="Event 2" />
+        <img src="gallery/CCSN 2023.jpg" alt="Event 3" />
+        <img src="gallery/CCSN MUMBAI.jpg" alt="Event 4" />
+        <img src="gallery/REUNION.jpg" alt="Event 5" />
+        <img src="gallery/img5.jpg" alt="Event 6" />
+        <!-- Add more <img> tags for more images -->
+      </div>
     </section>
-
     <section id="contact">
       <h2>Contact</h2>
       <p>Email: csit.rmg@bamu.ac.in</p>
